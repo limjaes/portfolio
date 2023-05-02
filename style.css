@@ -186,6 +186,10 @@ p {
 }
 
 /* About */
+#about {
+  scroll-margin: 50px;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-around;
@@ -253,6 +257,7 @@ p {
 
 #skills {
   background-color: var(--color-yellow);
+  scroll-margin: 50px;
 }
 
 .skillset {
@@ -304,6 +309,9 @@ p {
 }
 
 /* Work */
+#work {
+  scroll-margin: 50px;
+}
 
 .work__categories {
   margin: 40px;
