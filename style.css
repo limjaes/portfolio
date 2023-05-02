@@ -132,7 +132,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 21px;
+  top: 13px;
   right: 32px;
   font-size: 24px;
   border: none;
@@ -400,7 +400,7 @@ p {
   transform: translateY(0px);
 }
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -408,9 +408,9 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
-  margin-left: -12px;
+  transform: translate(-50%);
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
@@ -474,6 +474,8 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background: rgb(0, 158, 212);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.9) 80%);
   }
 
   .navbar__menu {
@@ -481,6 +483,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   /* About */

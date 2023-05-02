@@ -19,7 +19,14 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// Navbar toggle button for mobile screen size
+const navBarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navBarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle click on "contact me" button in home
