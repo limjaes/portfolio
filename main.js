@@ -59,6 +59,14 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter == null) {
     return;
   }
+
+  // Remove selection from the previous btn and select the new btn
+  const active = document.querySelector('.category__btn.active');
+  active.classList.remove('active');
+  //nodeName 태그가 button 일 경우엔 e.target을 실행하고 아니면 e.target.parentNode
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('active');
+
   projectContainer.classList.add('animation-out');
   setTimeout(() => {
     projects.forEach((project) => {
