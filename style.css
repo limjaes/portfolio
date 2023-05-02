@@ -104,7 +104,8 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-green);
+  background: rgb(0, 158, 212);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.9) 80%);
   padding: 8px;
 }
 
@@ -129,7 +130,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-light-green);
+  background-color: var(--color-green);
 }
 
 .navbar__toggle-btn {
@@ -187,7 +188,7 @@ p {
 
 /* About */
 #about {
-  scroll-margin: 50px;
+  scroll-margin: 88px;
 }
 
 .about__majors {
@@ -257,7 +258,7 @@ p {
 
 #skills {
   background-color: var(--color-yellow);
-  scroll-margin: 50px;
+  scroll-margin: 88px;
 }
 
 .skillset {
@@ -310,7 +311,7 @@ p {
 
 /* Work */
 #work {
-  scroll-margin: 50px;
+  scroll-margin: 88px;
 }
 
 .work__categories {
@@ -354,6 +355,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.animation-out {
+  opacity: 0.5;
+  transform: scale(0.98) translateY(30px);
 }
 
 .project {
@@ -365,6 +373,10 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -408,7 +420,9 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-green);
+  background:
+  /* top, transparent black, faked with gradient */ linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(imgs/home-background.png) center/cover no-repeat;
 }
 
 .contact__title,
@@ -428,7 +442,7 @@ p {
 
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-orange);
+  color: var(--color-black);
 }
 
 /* Scroll */
