@@ -171,6 +171,10 @@ p {
   border: 2px solid var(--color-white);
 }
 
+.home__contact:hover {
+  background-color: var(--color-green);
+}
+
 /* Section common */
 .section {
   text-align: center;
@@ -423,7 +427,8 @@ p {
 }
 
 .contact__title,
-.contact__email {
+.contact__email,
+.contact__rights {
   color: var(--color-white);
 }
 
@@ -466,6 +471,19 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size for mobile screen */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
   /* Navbar */
   .navbar__toggle-btn {
     display: block;
@@ -490,10 +508,12 @@ p {
   /* About */
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
@@ -501,6 +521,10 @@ p {
   }
 
   /* Work */
+  .category__btn {
+    padding: 8px;
+  }
+
   .project {
     flex-grow: 1;
   }
