@@ -415,7 +415,7 @@ p {
   transform: translateY(0px);
 }
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-light-green);
 }
 
 .project__description h3:after {
