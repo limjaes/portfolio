@@ -247,6 +247,10 @@ p {
   align-items: center;
 }
 
+.job__logo {
+  width: 150px;
+}
+
 .job__description {
   margin: 16px;
   text-align: left;
