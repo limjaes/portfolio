@@ -248,7 +248,7 @@ p {
 }
 
 .job__logo {
-  width: 150px;
+  width: 80px;
 }
 
 .job__description {
@@ -256,13 +256,20 @@ p {
   text-align: left;
 }
 
-.job__name,
+.job__name {
+  color: var(--color-dark-grey)
+}
+.job__company,
 .job__period {
   color: var(--color-light-grey);
 }
 
 .job__name {
   font-size: var(--font-small);
+}
+
+.job__company {
+  font-size: var(--font-micro);
 }
 
 .job__period {
